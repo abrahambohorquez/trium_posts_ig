@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Trium AI — Brand System</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --coral:#FF6B5B;--manda:#E85A3C;--vio:#6B5EFF;
+  --most:#D4A373;--jade:#4AB38E;--tinta:#1A1A2E;
+  --mag:#E8265F;--crema:#FAF7F0;--marfil:#F5F3EE;
+  --blanco:#FFFFFF;--gris:#3D3D4F;
+}
+body{background:#0e0e18;padding:40px;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;font-family:'Inter',sans-serif;}
+.grp{width:100%;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.2);padding:20px 0 6px;}
+.tag{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.2em;text-transform:uppercase;}
+.logo-sm{font-family:'Inter',sans-serif;font-weight:800;font-size:11px;letter-spacing:-.02em;opacity:.32;}
+
+/* ── Avatares 110×110 ── */
+.av{width:110px;height:110px;border-radius:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.av.circle{border-radius:50%;}
+
+/* ── Wordmarks horizontales ── */
+.wm{height:100px;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:0 32px;flex-shrink:0;}
+
+/* ── Lockups logo+wordmark ── */
+.lk{height:100px;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:0 28px;gap:20px;flex-shrink:0;}
+
+/* ── Covers 9:16 → 360×640 ── */
+.cv{width:360px;height:640px;border-radius:18px;overflow:hidden;flex-shrink:0;display:flex;flex-direction:column;justify-content:space-between;padding:48px 30px 44px;position:relative;}
+
+/* ── Franjas horizontales ── */
+.franja{width:860px;height:140px;border-radius:12px;display:flex;align-items:center;padding:0 36px;flex-shrink:0;justify-content:space-between;overflow:hidden;}
+
+/* ── Franjas cuadradas banner ── */
+.banner{width:860px;height:220px;border-radius:12px;display:flex;align-items:center;padding:0 48px;flex-shrink:0;justify-content:space-between;overflow:hidden;}
+
+.h1{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.05;letter-spacing:-.01em;}
+.h2{font-family:'Inter',sans-serif;font-weight:800;line-height:1;letter-spacing:-.025em;}
+.mono{font-family:'JetBrains Mono',monospace;}
+.dot{width:5px;height:5px;border-radius:50%;flex-shrink:0;}
+.ln-r{width:14px;height:1px;flex-shrink:0;}
+.rule-v{width:1px;height:40px;background:rgba(255,255,255,.15);}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     1 — AVATARES (foto de perfil)
+═══════════════════════════════════════ -->
+<p class="grp">01 · Avatares — foto de perfil Instagram / TikTok</p>
+
+<!-- Tinta + coral -->
+<div class="av" style="background:var(--tinta)">
+  <svg viewBox="0 0 74 44" width="68" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#FAF7F0" x="0" y="36" letter-spacing="-1">tr</text>
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#FF6B5B" x="36" y="36" letter-spacing="-1">AI</text>
+  </svg>
+</div>
+
+<!-- Coral + tinta -->
+<div class="av" style="background:var(--coral)">
+  <svg viewBox="0 0 74 44" width="68" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#1A1A2E" x="0" y="36" letter-spacing="-1">tr</text>
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#FAF7F0" x="36" y="36" letter-spacing="-1">AI</text>
+  </svg>
+</div>
+
+<!-- Crema + tinta -->
+<div class="av" style="background:var(--crema)">
+  <svg viewBox="0 0 74 44" width="68" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#1A1A2E" x="0" y="36" letter-spacing="-1">tr</text>
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#FF6B5B" x="36" y="36" letter-spacing="-1">AI</text>
+  </svg>
+</div>
+
+<!-- Violeta + crema -->
+<div class="av" style="background:var(--vio)">
+  <svg viewBox="0 0 74 44" width="68" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#FAF7F0" x="0" y="36" letter-spacing="-1">tr</text>
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#FF6B5B" x="36" y="36" letter-spacing="-1">AI</text>
+  </svg>
+</div>
+
+<!-- Marfil + tinta -->
+<div class="av" style="background:var(--marfil)">
+  <svg viewBox="0 0 74 44" width="68" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#1A1A2E" x="0" y="36" letter-spacing="-1">tr</text>
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#6B5EFF" x="36" y="36" letter-spacing="-1">AI</text>
+  </svg>
+</div>
+
+<!-- Circular tinta -->
+<div class="av circle" style="background:var(--tinta);border:2px solid rgba(255,107,91,.4)">
+  <svg viewBox="0 0 74 44" width="64" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#FAF7F0" x="0" y="36" letter-spacing="-1">tr</text>
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#FF6B5B" x="36" y="36" letter-spacing="-1">AI</text>
+  </svg>
+</div>
+
+<!-- Circular coral -->
+<div class="av circle" style="background:var(--coral)">
+  <svg viewBox="0 0 74 44" width="64" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#1A1A2E" x="0" y="36" letter-spacing="-1">tr</text>
+    <text font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#FAF7F0" x="36" y="36" letter-spacing="-1">AI</text>
+  </svg>
+</div>
+
+<!-- Ícono T solo tinta -->
+<div class="av" style="background:var(--tinta)">
+  <svg viewBox="0 0 54 60" width="48" xmlns="http://www.w3.org/2000/svg">
+    <line x1="12" y1="14" x2="42" y2="14" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+    <line x1="27" y1="14" x2="27" y2="46" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+  </svg>
+</div>
+
+<!-- Ícono T solo coral -->
+<div class="av" style="background:var(--coral)">
+  <svg viewBox="0 0 54 60" width="48" xmlns="http://www.w3.org/2000/svg">
+    <line x1="12" y1="14" x2="42" y2="14" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+    <line x1="27" y1="14" x2="27" y2="46" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="27" cy="46" r="5" fill="#FAF7F0"/>
+  </svg>
+</div>
+
+<!-- Ícono T crema -->
+<div class="av" style="background:var(--crema)">
+  <svg viewBox="0 0 54 60" width="48" xmlns="http://www.w3.org/2000/svg">
+    <line x1="12" y1="14" x2="42" y2="14" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+    <line x1="27" y1="14" x2="27" y2="46" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+  </svg>
+</div>
+
+<!-- Ícono T violeta -->
+<div class="av" style="background:var(--vio)">
+  <svg viewBox="0 0 54 60" width="48" xmlns="http://www.w3.org/2000/svg">
+    <line x1="12" y1="14" x2="42" y2="14" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+    <line x1="27" y1="14" x2="27" y2="46" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+  </svg>
+</div>
+
+<!-- Ícono T circular tinta -->
+<div class="av circle" style="background:var(--tinta);border:2px solid rgba(107,94,255,.4)">
+  <svg viewBox="0 0 54 60" width="44" xmlns="http://www.w3.org/2000/svg">
+    <line x1="12" y1="14" x2="42" y2="14" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+    <line x1="27" y1="14" x2="27" y2="46" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="27" cy="46" r="5" fill="#6B5EFF"/>
+  </svg>
+</div>
+
+<!-- ═══════════════════════════════════════
+     2 — WORDMARKS
+═══════════════════════════════════════ -->
+<p class="grp">02 · Wordmarks horizontales</p>
+
+<!-- tinta -->
+<div class="wm" style="background:var(--tinta)">
+  <svg viewBox="0 0 220 64" width="220" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#FAF7F0" x="0" y="42" letter-spacing="-1">trium</text>
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#FF6B5B" x="138" y="42" letter-spacing="-1">.</text>
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#FAF7F0" x="150" y="42" letter-spacing="-1">ai</text>
+    <line x1="0" y1="50" x2="220" y2="50" stroke="#FF6B5B" stroke-width=".8" opacity=".3"/>
+    <text font-family="JetBrains Mono,monospace" font-size="9" fill="#B3AEE8" x="1" y="63" letter-spacing="5">CONSULTING</text>
+  </svg>
+</div>
+
+<!-- crema -->
+<div class="wm" style="background:var(--crema)">
+  <svg viewBox="0 0 220 64" width="220" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#1A1A2E" x="0" y="42" letter-spacing="-1">trium</text>
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#FF6B5B" x="138" y="42" letter-spacing="-1">.</text>
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#1A1A2E" x="150" y="42" letter-spacing="-1">ai</text>
+    <line x1="0" y1="50" x2="220" y2="50" stroke="#1A1A2E" stroke-width=".8" opacity=".2"/>
+    <text font-family="JetBrains Mono,monospace" font-size="9" fill="#3D3D4F" x="1" y="63" letter-spacing="5">CONSULTING</text>
+  </svg>
+</div>
+
+<!-- marfil violeta -->
+<div class="wm" style="background:var(--marfil)">
+  <svg viewBox="0 0 220 64" width="220" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#1A1A2E" x="0" y="42" letter-spacing="-1">trium</text>
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#6B5EFF" x="138" y="42" letter-spacing="-1">.</text>
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#1A1A2E" x="150" y="42" letter-spacing="-1">ai</text>
+    <line x1="0" y1="50" x2="220" y2="50" stroke="#6B5EFF" stroke-width=".8" opacity=".3"/>
+    <text font-family="JetBrains Mono,monospace" font-size="9" fill="#6B5EFF" x="1" y="63" letter-spacing="5" opacity=".6">CONSULTING</text>
+  </svg>
+</div>
+
+<!-- coral -->
+<div class="wm" style="background:var(--coral)">
+  <svg viewBox="0 0 220 64" width="220" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#1A1A2E" x="0" y="42" letter-spacing="-1">trium</text>
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#FAF7F0" x="138" y="42" letter-spacing="-1">.</text>
+    <text font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#1A1A2E" x="150" y="42" letter-spacing="-1">ai</text>
+    <line x1="0" y1="50" x2="220" y2="50" stroke="#1A1A2E" stroke-width=".8" opacity=".2"/>
+    <text font-family="JetBrains Mono,monospace" font-size="9" fill="#1A1A2E" x="1" y="63" letter-spacing="5" opacity=".5">CONSULTING</text>
+  </svg>
+</div>
+
+<!-- ═══════════════════════════════════════
+     3 — LOCKUPS (ícono + wordmark)
+═══════════════════════════════════════ -->
+<p class="grp">03 · Lockups — ícono + wordmark</p>
+
+<!-- tinta -->
+<div class="lk" style="background:var(--tinta)">
+  <svg viewBox="0 0 54 60" width="40" xmlns="http://www.w3.org/2000/svg">
+    <line x1="12" y1="14" x2="42" y2="14" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+    <line x1="27" y1="14" x2="27" y2="46" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+  </svg>
+  <div style="width:1px;height:40px;background:rgba(255,255,255,.12)"></div>
+  <svg viewBox="0 0 160 56" width="160" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="30" font-weight="800" fill="#FAF7F0" x="0" y="32" letter-spacing="-0.5">trium<tspan fill="#FF6B5B">.</tspan>ai</text>
+    <text font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,.35)" x="0" y="50" letter-spacing="4.5">CONSULTING</text>
+  </svg>
+</div>
+
+<!-- crema -->
+<div class="lk" style="background:var(--crema)">
+  <svg viewBox="0 0 54 60" width="40" xmlns="http://www.w3.org/2000/svg">
+    <line x1="12" y1="14" x2="42" y2="14" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+    <line x1="27" y1="14" x2="27" y2="46" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+  </svg>
+  <div style="width:1px;height:40px;background:rgba(26,26,46,.15)"></div>
+  <svg viewBox="0 0 160 56" width="160" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="30" font-weight="800" fill="#1A1A2E" x="0" y="32" letter-spacing="-0.5">trium<tspan fill="#FF6B5B">.</tspan>ai</text>
+    <text font-family="JetBrains Mono,monospace" font-size="8" fill="#3D3D4F" x="0" y="50" letter-spacing="4.5" opacity=".55">CONSULTING</text>
+  </svg>
+</div>
+
+<!-- marfil jade -->
+<div class="lk" style="background:var(--marfil)">
+  <svg viewBox="0 0 54 60" width="40" xmlns="http://www.w3.org/2000/svg">
+    <line x1="12" y1="14" x2="42" y2="14" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+    <line x1="27" y1="14" x2="27" y2="46" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="27" cy="46" r="5" fill="#4AB38E"/>
+  </svg>
+  <div style="width:1px;height:40px;background:rgba(26,26,46,.12)"></div>
+  <svg viewBox="0 0 160 56" width="160" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="30" font-weight="800" fill="#1A1A2E" x="0" y="32" letter-spacing="-0.5">trium<tspan fill="#4AB38E">.</tspan>ai</text>
+    <text font-family="JetBrains Mono,monospace" font-size="8" fill="#3D3D4F" x="0" y="50" letter-spacing="4.5" opacity=".5">CONSULTING</text>
+  </svg>
+</div>
+
+<!-- coral + tinta -->
+<div class="lk" style="background:var(--coral)">
+  <svg viewBox="0 0 54 60" width="40" xmlns="http://www.w3.org/2000/svg">
+    <line x1="12" y1="14" x2="42" y2="14" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+    <line x1="27" y1="14" x2="27" y2="46" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="27" cy="46" r="5" fill="#FAF7F0"/>
+  </svg>
+  <div style="width:1px;height:40px;background:rgba(26,26,46,.2)"></div>
+  <svg viewBox="0 0 160 56" width="160" xmlns="http://www.w3.org/2000/svg">
+    <text font-family="Inter,sans-serif" font-size="30" font-weight="800" fill="#1A1A2E" x="0" y="32" letter-spacing="-0.5">trium<tspan fill="#FAF7F0">.</tspan>ai</text>
+    <text font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(26,26,46,.5)" x="0" y="50" letter-spacing="4.5">CONSULTING</text>
+  </svg>
+</div>
+
+<!-- ═══════════════════════════════════════
+     4 — FRANJAS HORIZONTALES
+═══════════════════════════════════════ -->
+<p class="grp">04 · Franjas — encabezados de video / LinkedIn / banners</p>
+
+<!-- Franja 1: tinta con logo y datos -->
+<div class="franja" style="background:var(--tinta)">
+  <div style="display:flex;align-items:center;gap:24px">
+    <svg viewBox="0 0 54 60" width="36" xmlns="http://www.w3.org/2000/svg">
+      <line x1="12" y1="14" x2="42" y2="14" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+      <line x1="27" y1="14" x2="27" y2="46" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+    </svg>
+    <div>
+      <p style="font-family:'Inter',sans-serif;font-size:22px;font-weight:800;color:#FAF7F0;letter-spacing:-.02em">trium<span style="color:#FF6B5B">.</span>ai</p>
+      <p class="tag" style="color:rgba(255,255,255,.3);margin-top:2px">CONSULTING</p>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:32px">
+    <div style="text-align:right">
+      <p class="tag" style="color:rgba(255,255,255,.35);margin-bottom:3px">WhatsApp</p>
+      <p style="font-size:13px;font-weight:500;color:#FAF7F0">+57 300 185 4774</p>
+    </div>
+    <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
+    <div style="text-align:right">
+      <p class="tag" style="color:rgba(255,255,255,.35);margin-bottom:3px">Redes</p>
+      <p style="font-size:13px;font-weight:500;color:#FAF7F0">@trium.ai</p>
+    </div>
+    <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
+    <div style="text-align:right">
+      <p class="tag" style="color:rgba(255,255,255,.35);margin-bottom:3px">Email</p>
+      <p style="font-size:12px;font-weight:400;color:rgba(255,255,255,.65)">contacto@triumai.co</p>
+    </div>
+  </div>
+</div>
+
+<!-- Franja 2: crema limpia -->
+<div class="franja" style="background:var(--crema)">
+  <div style="display:flex;align-items:center;gap:20px">
+    <svg viewBox="0 0 54 60" width="34" xmlns="http://www.w3.org/2000/svg">
+      <line x1="12" y1="14" x2="42" y2="14" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+      <line x1="27" y1="14" x2="27" y2="46" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+    </svg>
+    <div>
+      <p style="font-family:'Inter',sans-serif;font-size:22px;font-weight:800;color:#1A1A2E;letter-spacing:-.02em">trium<span style="color:#FF6B5B">.</span>ai</p>
+      <p class="tag" style="color:rgba(26,26,46,.35);margin-top:2px">CONSULTING</p>
+    </div>
+    <div style="width:1px;height:36px;background:rgba(26,26,46,.12)"></div>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:16px;font-style:italic;color:rgba(26,26,46,.55)">Inteligencia Artificial aplicada al negocio.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+    <p style="font-size:12px;font-weight:500;color:#1A1A2E">+57 300 185 4774</p>
+    <p style="font-size:11px;color:rgba(26,26,46,.5)">@trium.ai · contacto@triumai.co</p>
+  </div>
+</div>
+
+<!-- Franja 3: coral -->
+<div class="franja" style="background:var(--coral)">
+  <div style="display:flex;align-items:center;gap:24px">
+    <p style="font-family:'Inter',sans-serif;font-size:26px;font-weight:800;color:#1A1A2E;letter-spacing:-.02em">trium<span style="color:#FAF7F0">.</span>ai</p>
+    <div style="width:1px;height:36px;background:rgba(26,26,46,.2)"></div>
+    <p class="tag" style="color:rgba(26,26,46,.5)">Diagnóstico · Implementación · Soporte</p>
+  </div>
+  <p style="font-size:12px;font-weight:500;color:rgba(26,26,46,.6)">+57 300 185 4774 · @trium.ai</p>
+</div>
+
+<!-- ═══════════════════════════════════════
+     5 — BANNERS (YouTube thumb / LinkedIn)
+═══════════════════════════════════════ -->
+<p class="grp">05 · Banners — portada canal / LinkedIn</p>
+
+<!-- Banner 1: tinta grande -->
+<div class="banner" style="background:var(--tinta)">
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <p class="tag" style="color:rgba(255,255,255,.3)">trium.ai · Consulting</p>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:600;color:#FAF7F0;line-height:1.0;letter-spacing:-.01em">Inteligencia<br>Artificial aplicada<br>al negocio.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:flex-end;gap:14px">
+    <svg viewBox="0 0 54 60" width="48" xmlns="http://www.w3.org/2000/svg">
+      <line x1="12" y1="14" x2="42" y2="14" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+      <line x1="27" y1="14" x2="27" y2="46" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+    </svg>
+    <p style="font-size:12px;font-weight:500;color:rgba(255,255,255,.45);text-align:right">@trium.ai<br>+57 300 185 4774</p>
+  </div>
+</div>
+
+<!-- Banner 2: crema -->
+<div class="banner" style="background:var(--crema)">
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <svg viewBox="0 0 54 60" width="32" xmlns="http://www.w3.org/2000/svg">
+        <line x1="12" y1="14" x2="42" y2="14" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+        <line x1="27" y1="14" x2="27" y2="46" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+      </svg>
+      <p style="font-family:'Inter',sans-serif;font-size:20px;font-weight:800;color:#1A1A2E;letter-spacing:-.02em">trium<span style="color:#FF6B5B">.</span>ai</p>
+    </div>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:600;color:#1A1A2E;line-height:1.05;letter-spacing:-.01em">Diagnóstico honesto.<br>Resultados medibles.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-end">
+    <div style="background:var(--coral);border-radius:4px;padding:10px 16px;text-align:right">
+      <p class="tag" style="color:rgba(26,26,46,.6);margin-bottom:3px">Contáctenos</p>
+      <p style="font-size:14px;font-weight:700;color:#1A1A2E">+57 300 185 4774</p>
+    </div>
+    <p class="tag" style="color:rgba(26,26,46,.35)">@trium.ai · contacto@triumai.co</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     6 — PORTADAS DE VIDEO 9:16
+═══════════════════════════════════════ -->
+<p class="grp">06 · Portadas de video — TikTok / Reels (10 variantes)</p>
+
+<!-- CV01 Tinta logo central -->
+<div class="cv" style="background:var(--tinta)">
+  <div style="display:flex;flex-direction:column;gap:5px">
+    <div style="width:100%;height:1px;background:rgba(255,107,91,.2)"></div>
+    <div style="display:flex;justify-content:space-between">
+      <p class="tag" style="color:rgba(255,255,255,.25)">TRIUM AI</p>
+      <p class="tag" style="color:rgba(255,255,255,.2)">2026</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:14px">
+    <svg viewBox="0 0 54 60" width="52" xmlns="http://www.w3.org/2000/svg">
+      <line x1="12" y1="14" x2="42" y2="14" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+      <line x1="27" y1="14" x2="27" y2="46" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+    </svg>
+    <div style="text-align:center">
+      <p style="font-family:'Inter',sans-serif;font-size:52px;font-weight:800;color:#FAF7F0;letter-spacing:-.03em;line-height:.9">trium<span style="color:#FF6B5B">.</span>ai</p>
+      <p class="tag" style="color:rgba(255,255,255,.25);margin-top:8px;letter-spacing:.3em">CONSULTING</p>
+    </div>
+    <div style="width:24px;height:1px;background:rgba(255,107,91,.4)"></div>
+    <p class="tag" style="color:rgba(255,255,255,.18)">@trium.ai</p>
+  </div>
+  <div style="width:100%;height:1px;background:rgba(255,107,91,.15)"></div>
+</div>
+
+<!-- CV02 Crema con tagline -->
+<div class="cv" style="background:var(--crema)">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <p class="tag" style="color:rgba(26,26,46,.3)">TRIUM AI</p>
+    <p class="tag" style="color:rgba(26,26,46,.2)">Colombia</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <svg viewBox="0 0 54 60" width="40" xmlns="http://www.w3.org/2000/svg">
+      <line x1="12" y1="14" x2="42" y2="14" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+      <line x1="27" y1="14" x2="27" y2="46" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+    </svg>
+    <p style="font-family:'Inter',sans-serif;font-size:52px;font-weight:800;color:#1A1A2E;letter-spacing:-.03em;line-height:.9">trium<span style="color:#FF6B5B">.</span>ai</p>
+    <div style="width:24px;height:1.5px;background:var(--coral)"></div>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:16px;font-style:italic;color:rgba(26,26,46,.55);line-height:1.5">Inteligencia Artificial<br>aplicada al negocio.</p>
+  </div>
+  <p class="tag" style="color:rgba(26,26,46,.25)">@trium.ai</p>
+</div>
+
+<!-- CV03 Coral wordmark -->
+<div class="cv" style="background:var(--coral)">
+  <div style="display:flex;justify-content:space-between">
+    <p class="tag" style="color:rgba(26,26,46,.4)">TRIUM AI</p>
+    <p class="tag" style="color:rgba(26,26,46,.3)">2026</p>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
+    <p style="font-family:'Inter',sans-serif;font-size:58px;font-weight:800;color:#1A1A2E;letter-spacing:-.03em;line-height:.85">trium<span style="color:#FAF7F0">.</span>ai</p>
+    <div style="width:24px;height:1.5px;background:rgba(26,26,46,.25)"></div>
+    <p class="tag" style="color:rgba(26,26,46,.4)">CONSULTING</p>
+  </div>
+  <p class="tag" style="text-align:center;color:rgba(26,26,46,.3)">@trium.ai</p>
+</div>
+
+<!-- CV04 Tinta "Diagnóstico" -->
+<div class="cv" style="background:var(--tinta)">
+  <div style="display:flex;flex-direction:column;gap:5px">
+    <p class="tag" style="color:var(--coral)">TRIUM AI · FASE 1</p>
+    <div style="width:20px;height:1px;background:var(--coral)"></div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:600;color:#FAF7F0;line-height:1;letter-spacing:-.01em">Antes de<br>proponer,<br>entendemos.</p>
+    <div style="width:24px;height:1.5px;background:var(--coral)"></div>
+    <p style="font-size:10px;font-weight:300;color:rgba(255,255,255,.45);line-height:1.6">Diagnóstico sin costo.<br>Sin contratos de permanencia.</p>
+  </div>
+  <div style="display:flex;justify-content:space-between">
+    <p class="tag" style="color:rgba(255,255,255,.2)">@trium.ai</p>
+    <p class="tag" style="color:rgba(255,107,91,.5)">trium.ai</p>
+  </div>
+</div>
+
+<!-- CV05 Marfil 91% -->
+<div class="cv" style="background:var(--marfil)">
+  <div>
+    <p class="tag" style="color:rgba(26,26,46,.3)">TRIUM AI · CONSULTING</p>
+    <div style="width:20px;height:1px;background:var(--coral);margin-top:5px"></div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <p style="font-family:'Inter',sans-serif;font-size:88px;font-weight:800;color:#1A1A2E;letter-spacing:-.04em;line-height:.85">91<span style="font-size:36px;vertical-align:super;color:var(--coral)">%</span></p>
+    <div style="border-left:2px solid var(--coral);padding-left:12px">
+      <p style="font-size:12px;font-weight:300;color:rgba(26,26,46,.65);line-height:1.55">de PYMEs con IA reportan más ingresos en 90 días.</p>
+    </div>
+    <p class="tag" style="color:rgba(26,26,46,.3)">McKinsey 2024</p>
+  </div>
+  <p class="tag" style="color:rgba(26,26,46,.2)">@trium.ai</p>
+</div>
+
+<!-- CV06 Tinta + violeta -->
+<div class="cv" style="background:var(--tinta)">
+  <div>
+    <p class="tag" style="color:rgba(107,94,255,.7)">TRIUM AI</p>
+    <div style="width:20px;height:1px;background:var(--vio);margin-top:5px"></div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <div style="background:rgba(107,94,255,.1);border:1px solid rgba(107,94,255,.2);border-radius:3px;padding:5px 11px;width:fit-content">
+      <p class="tag" style="color:var(--vio)">Automatización</p>
+    </div>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:600;color:#FAF7F0;line-height:1;letter-spacing:-.01em">IA para<br>su negocio.</p>
+    <div style="width:24px;height:1px;background:var(--vio)"></div>
+  </div>
+  <div style="display:flex;justify-content:space-between">
+    <p class="tag" style="color:rgba(255,255,255,.18)">@trium.ai</p>
+    <p class="tag" style="color:rgba(107,94,255,.4)">trium.ai</p>
+  </div>
+</div>
+
+<!-- CV07 Crema minimal -->
+<div class="cv" style="background:var(--crema);align-items:center;justify-content:center;gap:0">
+  <div style="display:flex;flex-direction:column;align-items:center;gap:16px">
+    <svg viewBox="0 0 54 60" width="56" xmlns="http://www.w3.org/2000/svg">
+      <line x1="12" y1="14" x2="42" y2="14" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+      <line x1="27" y1="14" x2="27" y2="46" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="27" cy="46" r="5" fill="#FF6B5B"/>
+    </svg>
+    <p style="font-family:'Inter',sans-serif;font-size:52px;font-weight:800;color:#1A1A2E;letter-spacing:-.03em;text-align:center;line-height:.9">trium<span style="color:#FF6B5B">.</span>ai</p>
+    <p class="tag" style="color:rgba(26,26,46,.25);letter-spacing:.3em">CONSULTING</p>
+    <div style="width:20px;height:1px;background:rgba(26,26,46,.2)"></div>
+    <p class="tag" style="color:rgba(26,26,46,.2)">@trium.ai</p>
+  </div>
+</div>
+
+<!-- CV08 Tinta sector Salud -->
+<div class="cv" style="background:var(--tinta)">
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <p class="tag" style="color:rgba(255,255,255,.3)">TRIUM AI</p>
+    <div style="background:rgba(74,179,142,.1);border:1px solid rgba(74,179,142,.25);border-radius:2px;padding:4px 10px;width:fit-content">
+      <p class="tag" style="color:var(--jade)">Salud · Odontología</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <p style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:600;color:#FAF7F0;line-height:1.05;letter-spacing:-.01em">Recepcionista<br>virtual.<br>Las 24 horas.</p>
+    <div style="width:24px;height:1.5px;background:var(--jade)"></div>
+    <p style="font-size:10px;font-weight:300;color:rgba(255,255,255,.4);line-height:1.6">Sin no-shows. Sin llamadas perdidas.<br>Sin secretaria adicional.</p>
+  </div>
+  <div style="display:flex;justify-content:space-between">
+    <p class="tag" style="color:rgba(255,255,255,.18)">@trium.ai</p>
+    <p class="tag" style="color:rgba(74,179,142,.5)">trium.ai</p>
+  </div>
+</div>
+
+<!-- CV09 Marfil "Resultados" -->
+<div class="cv" style="background:var(--marfil)">
+  <div>
+    <p class="tag" style="color:rgba(26,26,46,.3)">TRIUM AI</p>
+    <div style="width:20px;height:1px;background:var(--coral);margin-top:5px"></div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <p style="font-family:'Cormorant Garamond',serif;font-size:50px;font-weight:600;color:#1A1A2E;line-height:1;letter-spacing:-.01em">Resultados<br>medibles.<br>Siempre.</p>
+    <div style="width:24px;height:1.5px;background:var(--coral)"></div>
+    <p style="font-size:10px;font-weight:300;color:rgba(26,26,46,.5);line-height:1.6">Si no hay retorno claro,<br>se lo decimos.</p>
+  </div>
+  <p class="tag" style="color:rgba(26,26,46,.2)">@trium.ai</p>
+</div>
+
+<!-- CV10 Split tinta/crema -->
+<div class="cv" style="padding:0;overflow:hidden;flex-direction:column">
+  <div style="background:var(--tinta);flex:1;display:flex;flex-direction:column;justify-content:center;padding:36px 30px;gap:10px">
+    <p class="tag" style="color:rgba(255,255,255,.3)">CONSULTORÍA EN IA</p>
+    <p style="font-family:'Inter',sans-serif;font-size:50px;font-weight:800;color:#FAF7F0;letter-spacing:-.03em;line-height:.9">trium<span style="color:#FF6B5B">.</span>ai</p>
+  </div>
+  <div style="background:var(--crema);padding:20px 30px;display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <p style="font-size:11px;font-weight:500;color:#1A1A2E">contacto@triumai.co</p>
+      <p style="font-size:10px;color:rgba(26,26,46,.5);margin-top:3px">@trium.ai · +57 300 185 4774</p>
+    </div>
+    <div style="width:1px;height:28px;background:rgba(26,26,46,.12)"></div>
+    <p class="tag" style="color:rgba(26,26,46,.3)">Colombia<br>2026</p>
+  </div>
+</div>
+
+</body>
+</html>
